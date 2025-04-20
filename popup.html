@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html style="height: auto;">
+<head>
+    <title>Window Resizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body class="popup">
+    <div class="popup-container">
+        <div class="card presets">
+            <div class="section-title">Presets</div>
+            <div id="list"></div>
+        </div>
+
+        <div class="card info">
+            <div class="label">
+                Full Window Size (px)
+                <span class="tooltip-icon" title="Includes the entire browser window - including toolbars, tabs, and borders.">i</span>
+            </div>
+            <div id="window"></div>
+
+            <div class="label">
+                Visible Page Area (px)
+                <span class="tooltip-icon" title="Just the content area inside the browser - the part websites actually render in.">i</span>
+            </div>
+            <div id="viewport"></div>
+
+            <button id="options" class="popup-button">Options</button>
+        </div>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>
